@@ -1,13 +1,12 @@
 //Program for conditional statements
 
-/*PROGRAMER:Mbai Samuel
+/*PROGRAMER:Samuel
 AGE:18
 COURSE:BBIT
-Reg NO:CT102/G/24153/24
 */
 #include <stdio.h>
 int main(){
-	//Declaraton and initializatio
+	//Declaraton and initialization
 	int age;
 	float annual_income;
 	
