@@ -1,36 +1,20 @@
-//program to to define a structure and initialize variable
-/*Author:Samuel
-Reg No:CT102/G/24153/24
-Course:BBIT
-*/
 #include <stdio.h>
 
-// Define the Employee structure
-struct Employee {
-    char name[25];
-    int id;
-    char department[20];
-    float salary;
-    char email[50];
-};
-
 int main() {
-    // Declare and initialize an Employee variable
-    struct Employee emp = {
-        "John Doe",
-        12345,
-        "Human Resource",
-        55000.50,
-        "john.doe@company.com"
+    // Declare and initialize the 2D array
+    int scores[2][2] = {
+        {10, 20},
+        {30, 40}
     };
 
-    // Display employee details
-    printf("Employee Details:\n");
-    printf("Name: %s\n", emp.name);
-    printf("ID: %d\n", emp.id);
-    printf("Department: %s\n", emp.department);
-    printf("Salary: %.2f\n", emp.salary);
-    printf("Email: %s\n", emp.email);
+    // Print the elements of the 2D array using nested loops
+    printf("Elements of the 2D array:\n");
+    for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 2; j++) {
+            printf("%d ", scores[i][j]);
+        }
+        printf("\n");  // Newline after each row
+    }
 
     return 0;
 }
